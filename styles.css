@@ -636,6 +636,90 @@ footer.site-footer .wrap {
 .cs-next h2 { font-size: 26px; }
 .cs-next-links { display: flex; gap: 18px; justify-content: center; margin-top: 22px; flex-wrap: wrap; }
 
+/* ===== Section CTA ===== */
+
+.section-cta-right {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 32px;
+}
+
+/* ===== About page ===== */
+
+.about-hero { padding: 88px 0 32px; }
+
+.about-hero h1 { font-size: clamp(28px, 3.6vw, 38px); max-width: 700px; }
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 56px;
+  align-items: start;
+  margin-top: 48px;
+}
+
+.headshot-placeholder {
+  aspect-ratio: 4 / 5;
+  border-radius: var(--radius);
+  border: 1.5px dashed var(--line);
+  background: var(--bg-alt);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: var(--muted);
+}
+
+.headshot-placeholder svg { width: 44px; height: 44px; }
+.headshot-placeholder span { font-size: 13px; font-weight: 600; }
+
+.about-text p { font-size: 16.5px; }
+
+.credential-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 36px;
+}
+
+.testimonial-card {
+  border: 1.5px dashed var(--line);
+  border-radius: var(--radius);
+  padding: 26px 24px;
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.testimonial-card .quote-mark {
+  font-family: var(--serif);
+  font-size: 34px;
+  color: var(--muted);
+  line-height: 1;
+}
+
+.testimonial-card p {
+  font-size: 14.5px;
+  font-style: italic;
+  color: var(--muted);
+  margin: 0;
+}
+
+.testimonial-card .t-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
 /* ===== Responsive ===== */
 
 @media (max-width: 860px) {
@@ -647,6 +731,9 @@ footer.site-footer .wrap {
   .build-grid { grid-template-columns: 1fr; }
   .feature-grid { grid-template-columns: 1fr; }
   .stat-row { grid-template-columns: 1fr; }
+  .about-grid { grid-template-columns: 1fr; }
+  .headshot-placeholder { max-width: 280px; }
+  .testimonial-grid { grid-template-columns: 1fr; }
   section { padding: 52px 0; }
 
   .nav-toggle { display: flex; }
