@@ -450,6 +450,28 @@ footer.site-footer .wrap {
   font-weight: 600;
 }
 
+.cs-download {
+  margin-top: 40px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  border: 1.5px solid rgba(255, 255, 255, 0.55);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.15s ease;
+}
+
+.cs-download svg { width: 16px; height: 16px; }
+
+.cs-download:hover {
+  background: #fff;
+  color: var(--primary);
+  border-color: #fff;
+}
+
 .cs-section { padding: 60px 0; border-bottom: 1px solid var(--line); }
 .cs-section:last-of-type { border-bottom: none; }
 
