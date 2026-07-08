@@ -8,6 +8,7 @@
   --muted: #7A8888;
   --primary: #2B5F5C;
   --primary-dark: #16302E;
+  --primary-hover: #16302E;
   --accent: #C1694F;
   --accent-soft: #EFD9CE;
   --line: #E2DCD1;
@@ -121,7 +122,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   font-weight: 600;
 }
 
-.nav-links a.cta:hover { background: var(--primary-dark); }
+.nav-links a.cta:hover { background: var(--primary-hover); }
 
 .nav-toggle {
   display: none;
@@ -184,7 +185,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   background: var(--primary);
   color: var(--white);
 }
-.btn-primary:hover { background: var(--primary-dark); }
+.btn-primary:hover { background: var(--primary-hover); }
 
 .btn-ghost {
   border-color: var(--ink);
@@ -293,8 +294,18 @@ section { padding: 72px 0; }
   position: relative;
 }
 
-.project-media.terracotta { background: linear-gradient(135deg, var(--accent) 0%, #8f4630 100%); }
-.project-media.slate { background: linear-gradient(135deg, #3E5C6E 0%, #1C2E38 100%); }
+/* Card accent colors — matched to each project's own case-study deck */
+.card-birth .project-media { background: linear-gradient(135deg, #8B3A3A 0%, #5C2626 100%); }
+.card-genentech .project-media { background: linear-gradient(135deg, #1A5FA8 0%, #123F70 100%); }
+.card-onewe .project-media { background: linear-gradient(135deg, #1D4E44 0%, #123029 100%); }
+
+.card-birth .tag { background: #F2DADA; color: #8B3A3A; }
+.card-genentech .tag { background: #CCDAEA; color: #1A5FA8; }
+.card-onewe .tag { background: #D8EDE9; color: #1D4E44; }
+
+.card-birth .project-link { color: #8B3A3A; }
+.card-genentech .project-link { color: #1A5FA8; }
+.card-onewe .project-link { color: #1D4E44; }
 
 .project-media .p-year {
   color: rgba(255,255,255,0.85);
