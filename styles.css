@@ -6,11 +6,11 @@
   --ink: #1C2B2B;
   --ink-soft: #4B5B5B;
   --muted: #7A8888;
-  --primary: #2B5F5C;
-  --primary-dark: #16302E;
-  --primary-hover: #16302E;
-  --accent: #C1694F;
-  --accent-soft: #EFD9CE;
+  --primary: #7A4056;
+  --primary-dark: #3D2029;
+  --primary-hover: #5E3040;
+  --accent: #D08FA0;
+  --accent-soft: #F5E1E6;
   --line: #E2DCD1;
   --white: #FFFFFF;
   --radius: 14px;
@@ -378,7 +378,7 @@ section { padding: 72px 0; }
 .contact-section .btn-primary {
   background: var(--accent);
 }
-.contact-section .btn-primary:hover { background: #a4553d; }
+.contact-section .btn-primary:hover { background: #9C6B78; }
 
 .contact-section .btn-ghost {
   border-color: rgba(255,255,255,0.5);
