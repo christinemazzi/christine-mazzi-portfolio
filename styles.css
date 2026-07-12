@@ -405,7 +405,7 @@ footer.site-footer .wrap {
 
 .cs-hero {
   padding: 64px 0 56px;
-  background: var(--primary);
+  background: var(--hero-bg, var(--primary));
 }
 
 .cs-hero .eyebrow { color: rgba(255, 255, 255, 0.72); }
